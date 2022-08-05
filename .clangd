@@ -1,0 +1,4 @@
+CompileFlags:
+	Add:
+		- "--include-directory=C:\\Users\\danie\\Documents\\projects\\git\\AbyssMath\\header"
+		- "--include-directory=C:\\Things\\libs\\include\\Abyss"

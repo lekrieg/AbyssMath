@@ -13,9 +13,6 @@ namespace abyss
 		#define DEG2RAD(x) ((x) * 0.0174533f)
 		#define CMP(x, y)(fabsf((x) - (y)) <= FLT_EPSILON * fmaxf(1.0f, fmaxf(fabsf(x), fabsf(y))))
 
-		// TODO: colocar a implementação aqui direto e dar inline nas funcoes
-		// não da pra dar inline nos assemblys das funções dentro .o
-		// lembrar de adicionar o .o das coisas da lib na engine
 		class Vector2
 		{
 			public:

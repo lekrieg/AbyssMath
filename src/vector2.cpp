@@ -4,7 +4,7 @@ namespace abyss
 {
 	namespace math
 	{
-		float Vector2::Dot(const Vector2& vec) const
+		inline float Vector2::Dot(const Vector2& vec) const
 		{
 			return x * vec.x + y * vec.y;
 		}
@@ -38,7 +38,7 @@ namespace abyss
 			return abyss::math::distance(vec, *this);
 		}
 
-		void Vector2::Scale(float scale)
+		inline void Vector2::Scale(float scale)
 		{
 			x *= scale;
 			y *= scale;
@@ -51,7 +51,7 @@ namespace abyss
 		}
 
 		// -- outside class methods
-		float dot(const Vector2& lhs, const Vector2& rhs)
+		inline float dot(const Vector2& lhs, const Vector2& rhs)
 		{
 			return lhs.x * rhs.x + lhs.y * rhs.y;
 		}
